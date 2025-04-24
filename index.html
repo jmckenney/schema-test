@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>App Schema Redirect Tester</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2em;
+      background: #f7f7f7;
+    }
+    h1 {
+      font-size: 1.5em;
+    }
+    button {
+      display: block;
+      margin: 0.5em 0;
+      padding: 0.75em 1.5em;
+      font-size: 1em;
+      border: none;
+      border-radius: 6px;
+      background-color: #007aff;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005fcc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Test App URL Scheme Redirects</h1>
+
+  <button onclick="window.location.href='facebook://?secret=foo';">Open Facebook</button>
+  <button onclick="window.location.href='chrome://?secret=foo';">Open Chrome</button>
+  <button onclick="window.location.href='twitter://?secret=foo';">Open Twitter</button>
+  <button onclick="window.location.href='instagram://?secret=foo';">Open Instagram</button>
+  <button onclick="window.location.href='zoomus://?secret=foo';">Open Zoom</button>
+  <button onclick="window.location.href='youtube://?secret=foo';">Open YouTube</button>
+  <button onclick="window.location.href='vidahealthcoach://?secret=foo';">Open Vida (Custom)</button>
+
+</body>
+</html>
